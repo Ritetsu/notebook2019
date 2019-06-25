@@ -1,2 +1,2 @@
 # Python
-Python files that including homework and group projects.
+Python files, homework and group projects included.
