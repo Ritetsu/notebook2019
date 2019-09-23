@@ -14,7 +14,7 @@ jupyter notebook --generate-config
 ```
 执行完成后在C:\Users\yourname\.jupyter下找到刚才生成的.py文件即可。
 
-**但是！**我在.jupyter底下并没有找到这个文件！查了很多资料也没搞清楚原因，最有可能的结果我感觉是Anaconda和Python的版本问题或者我什么时候不小心删掉了关键文件（？）。所以选择了简单的解决办法，用conda重装一次Jupyter Notebook。
+**但是**我在.jupyter底下并没有找到这个文件！查了很多资料也没搞清楚原因，最有可能的结果我感觉是Anaconda和Python的版本问题或者我什么时候不小心删掉了关键文件（？）。所以选择了简单的解决办法，用conda重装一次Jupyter Notebook。
 
 打开Anaconda Prompt，输入：
 ```
