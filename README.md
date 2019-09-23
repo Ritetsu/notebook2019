@@ -1,6 +1,10 @@
 # Python
+持续更新：
 
 * Jupyter Notebook使用中遇到的问题及解决
+* 《Python——统计人的视角》（吴喜之/编著）笔记
+
+固定文件：
 
 1.《Python程序语言设计》课程作业
 
