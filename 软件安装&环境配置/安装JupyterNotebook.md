@@ -59,14 +59,13 @@ in [2]: passwd()                              #输完会获得一个密钥，复
 $ vim /root/.jupyter/jupyter_notebook_config.py
 
 c.NotebookApp.ip = '*'            #即对外提供访问的ip
-
 c.NotebookApp.port=8888                      #即对外提供访问的端口
 c.NotebookApp.open_browser = False            #False即启动不打开浏览器
-
 c.NotebookApp.password = u'sha1:dcae22e6f7b0:e2dd5aa3e1731c05e6fd611a49d616dfcd215bf8'  #密钥
 ```
 ！！！我太南了。
 配置完后一直出现各种bug，在这里详细解决一下：
+
 ①在命令窗口就报错，端口8888已被占用，然后切换到别的端口却打不开网页？
 期间尝试了多次把c.NotebookApp.ip=''换成云服务器的公有ip和私有ip都不顶用，端口port也是换了又换（在云服务器的安全组里可以开放新的端口），最后换成了全新的8889，然而并没有用。
 最后我试了下公有ip:8888，能顺利打开之前装好的宝塔面板，但是想不起来账号密码了。来个：
@@ -89,6 +88,7 @@ $ jupyter notebook --allow-root
 最后就是完成让JupyterNotebook一直运行的任务：
 ```Bash
 $ nohup jupyter notebook --allow-root &     #nohup让其不挂断的运行，&维持在后台
+#以下是配合后台运行常用的命令
 $ jobs                                      #查看当前终端后台运行的任务
 $ ps                                        #查看当前的所有进程
 $ kill %jobnum
