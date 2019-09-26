@@ -45,7 +45,9 @@ $ jupyter notebook --generate-config --allow-root
 出现：Writing default config to: /root/.jupyter/jupyter_notebook_config.py表面成功了。
 然后安装Jupyter相关的插件：
 ```Bash
+$ pip install jupyter_nbextensions_configurator
 $ pip install jupyter_contrib_nbextensions
+$ jupyter nbextensions_configurator enable --user
 $ jupyter contrib nbextension install --user
 ```
 然后更改密码：
