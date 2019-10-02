@@ -30,7 +30,3 @@ PeakFinder、MACS、SISSRs、QuEST、PeakSeq、FindPeaks、CISGenome、W-ChIPeak
 ####
 核密度估计法（QuEST，F-Seq，CSDeconv）
 不设定窗口，直接对富集密度进行评估，超过设定富集程度阈值的即为候补富集区，两者间距离小于设定值则合并为一个富集区。
-
-```{.python .input}
-8
-```
