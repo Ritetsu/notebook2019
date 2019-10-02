@@ -1,4 +1,4 @@
-for i in 'Python' 'Linux_LearningNotes' 'Course_C_LanguageProgramming' 'Course_R_LanguageProgramming'
+for i in 'Python' 'Linux_LearningNotes' 'Course_Materials' 'GitHub_Introduction_and_Practice_Notes'
 do
   cd /home/sayori/git_local/$i
   git add -A
