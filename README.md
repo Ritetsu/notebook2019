@@ -9,6 +9,5 @@
 ### 《Machine Learning》
 by Andrew Ng
 
-```{.python .input}
 
-```
+
