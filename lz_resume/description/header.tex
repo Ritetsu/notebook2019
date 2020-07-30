@@ -1,0 +1,19 @@
+\newcommand{\paint}[3]{
+    \begin{minipage}{#1}
+        \includegraphics[width=#1,height=#2]{#3}
+    \end{minipage} 
+}
+\newcommand{\myheader}{
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}rr}
+  && \multirow{4}*{\paint{2.5cm}{3.3cm}{./lz_new.jpg}}\\
+  \specialrule{0em}{4pt}{4pt}
+  \textbf{\LARGE 李哲} & 13261858055$\,${\color{labelgrey}(电话)} &\\
+  北京市海淀区圆明园西路2号中国农业大学$\,${\color{labelgrey}(地址)} & \href{mailto:lzlizhe@foxmail.com}{lzlizhe@foxmail.com}$\,${\color{labelgrey}(邮件)} & \\
+  100193$\,${\color{labelgrey}(邮编)} & \href{https://github.com/Ritetsu}{github.com/Ritetsu}$\,${\color{labelgrey}(GitHub)} & \\
+  \end{tabular*}\\\vspace{0.1in}
+%  \fancyfoot[L]{\footnotesize 最后更新: \today}
+%  \fancyfoot[R]{\footnotesize \url{http://example.com/resume-zh.pdf}}
+}
+
+\myheader
+
