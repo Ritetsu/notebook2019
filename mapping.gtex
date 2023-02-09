@@ -5,7 +5,7 @@
         --alignSJoverhangMin 8 \
         --alignSoftClipAtReferenceEnds No \
         --chimJunctionOverhangMin 15 \
-        --genomeDir $INDEX_DIRECTORY
+        --genomeDir $INDEX_DIRECTORY \
         --genomeLoad NoSharedMemory \
         --limitBAMsortRAM 2000000000000 \
         --limitSjdbInsertNsj 3000000 \
@@ -20,11 +20,11 @@
         --outSAMmapqUnique 60 \
         --outSAMstrandField intronMotif \
         --outSAMtype BAM SortedByCoordinate \
-        --outSAMunmapped Within
+        --outSAMunmapped Within \
         --outWigStrand Unstranded \
         --quantMode TranscriptomeSAM \
         --readFilesCommand zcat \
-        --readFilesIn $read1 $read2
+        --readFilesIn ${read1} ${read2} \
         --runThreadN 32 \
         --sjdbFileChrStartEnd - \
         --sjdbGTFfile /picb/lilab/share_data/ref/hg38/gencode.v26.annotation.gtf \
