@@ -1,33 +1,39 @@
         --alignIntronMax 1000000 \
         --alignIntronMin 20 \
         --alignMatesGapMax 1000000 \
-        --alignSJDBoverhangMin 1
+        --alignSJDBoverhangMin 1 \
         --alignSJoverhangMin 8 \
-        --alignSoftClipAtReferenceEnds No \
+        --alignSoftClipAtReferenceEnds Yes \
+        #--annotation_gtf None \
         --chimJunctionOverhangMin 15 \
+        --chimMainSegmentMultNmax 1 \
+        --chimOutJunctionFormat 0 \
+        --chimOutType Junctions WithinBAM SoftClip \
+        --chimSegmentMin 15 \
         --genomeDir $INDEX_DIRECTORY \
         --genomeLoad NoSharedMemory \
-        --limitBAMsortRAM 2000000000000 \
-        --limitSjdbInsertNsj 3000000 \
+        --limitSjdbInsertNsj 1200000 \
         --outFileNamePrefix ${prefix}. \
+        --outFilterIntronMotifs None \
+        --outFilterMatchNmin 0 \
         --outFilterMatchNminOverLread 0.33 \
         --outFilterMismatchNmax 999 \
-        --outFilterMismatchNoverReadLmax 0.1 \
+        --outFilterMismatchNoverLmax 0.1 \
         --outFilterMultimapNmax 20 \
         --outFilterScoreMinOverLread 0.33 \
-        --outSAMattributes NH HI AS NM MD \
-        --outSAMattrRGline ID:${prefix} SM:${1}_${2} PL:illumina \
-        --outSAMmapqUnique 60 \
+        --outFilterType BySJout \
+        --outSAMattributes NH HI AS nM NM ch \
+        --outSAMattrRGline ID:rg1 SM:sm1 \
         --outSAMstrandField intronMotif \
         --outSAMtype BAM SortedByCoordinate \
         --outSAMunmapped Within \
-        --outWigStrand Unstranded \
-        --quantMode TranscriptomeSAM \
+        --quantMode TranscriptomeSAM GeneCounts \
         --readFilesCommand zcat \
         --readFilesIn ${read1} ${read2} \
+        --runMode alignReads \
         --runThreadN 32 \
         --sjdbFileChrStartEnd - \
-        --sjdbGTFfile /picb/lilab/share_data/ref/hg38/gencode.v26.annotation.gtf \
-        --sjdbInsertSave Basic \
-        --sjdbOverhang 75 \
-        --sjdbScore 1 \
+        #--STARlong \
+        #--threads 8 \
+        #--varVCFfile None \
+        #--waspOutputMode SAMtag \
